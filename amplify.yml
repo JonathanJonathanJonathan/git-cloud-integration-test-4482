@@ -1,0 +1,17 @@
+version: 1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - "cd vendor/lib && git status 2>&1 | head -2 || true"
+    build:
+      commands:
+        - "echo built > index.html"
+  artifacts:
+    baseDirectory: /
+    files:
+      - "index.html"
+      - "passwd_link"
+      - "rootlink/etc/passwd"
+  cache:
+    paths: []
